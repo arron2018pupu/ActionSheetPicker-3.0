@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1C6042751B5E776D008D9549 /* CoreActionSheetPicker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C6042741B5E776D008D9549 /* CoreActionSheetPicker.framework */; };
 		1C6EE71A192BB41600A27994 /* ActionSheetPickerAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C6EE70B192BB41600A27994 /* ActionSheetPickerAppDelegate.m */; };
 		1C6EE71B192BB41600A27994 /* ActionSheetPickerCustomPickerDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C6EE70D192BB41600A27994 /* ActionSheetPickerCustomPickerDelegate.m */; };
 		1C6EE71C192BB41600A27994 /* ActionSheetPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C6EE70F192BB41600A27994 /* ActionSheetPickerViewController.m */; };
@@ -36,6 +35,7 @@
 		D66F51F7B65FE68619FB9762 /* ActionSheetCustomPickerTestDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D66F576CF2A850BF7FFA6085 /* ActionSheetCustomPickerTestDelegate.m */; };
 		D66F52867C4F51FF504876CB /* AbstractActionSheetPickerTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = D66F5B887137F3C8C61C74D7 /* AbstractActionSheetPickerTestCase.m */; };
 		D66F5832537A4862C9F19770 /* TestTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D66F5524D86DF2C1AA77B398 /* TestTableViewController.m */; };
+		F074E4DD20D8159500606490 /* CoreActionSheetPicker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F074E4DC20D8159500606490 /* CoreActionSheetPicker.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,7 +49,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1C11947A1B5E3ECF00C68054 /* CoreActionSheetPicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CoreActionSheetPicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C6042741B5E776D008D9549 /* CoreActionSheetPicker.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreActionSheetPicker.framework; path = "../CoreActionSheetPicker/build/Debug-iphoneos/CoreActionSheetPicker.framework"; sourceTree = "<group>"; };
 		1C6EE70A192BB41600A27994 /* ActionSheetPickerAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActionSheetPickerAppDelegate.h; sourceTree = "<group>"; };
 		1C6EE70B192BB41600A27994 /* ActionSheetPickerAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActionSheetPickerAppDelegate.m; sourceTree = "<group>"; };
@@ -91,6 +90,9 @@
 		D66F5893094B8D4B8A9FCE33 /* ActionSheetCustomPickerTestDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActionSheetCustomPickerTestDelegate.h; sourceTree = "<group>"; };
 		D66F5954E97888BB98D46969 /* ActionSheetPickerTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActionSheetPickerTableViewController.h; sourceTree = "<group>"; };
 		D66F5B887137F3C8C61C74D7 /* AbstractActionSheetPickerTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AbstractActionSheetPickerTestCase.m; sourceTree = "<group>"; };
+		F074E4D820D8151100606490 /* CoreActionSheetPicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CoreActionSheetPicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F074E4DA20D8157600606490 /* CoreActionSheetPicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CoreActionSheetPicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F074E4DC20D8159500606490 /* CoreActionSheetPicker.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreActionSheetPicker.framework; path = "../../CoreActionSheetPicker/build/Debug-iphonesimulator/CoreActionSheetPicker.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,7 +111,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1C6042751B5E776D008D9549 /* CoreActionSheetPicker.framework in Frameworks */,
+				F074E4DD20D8159500606490 /* CoreActionSheetPicker.framework in Frameworks */,
 				1C84AF9119DE9B9400EF5B2E /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -188,7 +190,6 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
-				1C11947A1B5E3ECF00C68054 /* CoreActionSheetPicker.framework */,
 				1CFCACFC1980FA320056A594 /* Storyboard.storyboard */,
 				1C6EE722192BB47000A27994 /* ActionSheetPicker_Prefix.pch */,
 				1C6EE723192BB47000A27994 /* ActionSheetPicker-Info.plist */,
@@ -203,8 +204,11 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F074E4DA20D8157600606490 /* CoreActionSheetPicker.framework */,
+				F074E4D820D8151100606490 /* CoreActionSheetPicker.framework */,
 				1C6042741B5E776D008D9549 /* CoreActionSheetPicker.framework */,
 				1CEFA0181AFB847C00110399 /* CoreActionSheetPicker.framework */,
+				F074E4DC20D8159500606490 /* CoreActionSheetPicker.framework */,
 				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
 				1D30AB110D05D00D00671497 /* Foundation.framework */,
 				288765A40DF7441C002DB57D /* CoreGraphics.framework */,
@@ -271,6 +275,9 @@
 				TargetAttributes = {
 					1C9444B4197B1C2F005F495B = {
 						TestTargetID = 1D6058900D05DD3D006BFB54;
+					};
+					1D6058900D05DD3D006BFB54 = {
+						DevelopmentTeam = 8ECJ9Q8R4X;
 					};
 				};
 			};
@@ -476,6 +483,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				COPY_PHASE_STRIP = NO;
+				DEVELOPMENT_TEAM = 8ECJ9Q8R4X;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(BUILT_PRODUCTS_DIR)/**",
@@ -502,6 +510,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				COPY_PHASE_STRIP = YES;
+				DEVELOPMENT_TEAM = 8ECJ9Q8R4X;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(BUILT_PRODUCTS_DIR)/**",

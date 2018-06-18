@@ -120,6 +120,8 @@ CG_INLINE BOOL isIPhone4() {
 
 - (UIBarButtonItem *)createButtonWithType:(UIBarButtonSystemItem)type target:(id)target action:(SEL)buttonAction;
 
+- (UIBarButtonItem *)createButtonWithTitle:(NSString*)tile target:(id)target action:(SEL)buttonAction;
+
 - (IBAction)actionPickerDone:(id)sender;
 
 - (IBAction)actionPickerCancel:(id)sender;
@@ -149,12 +151,16 @@ CG_INLINE BOOL isIPhone4() {
                 self.supportedInterfaceOrientations |= (1 << UIInterfaceOrientationPortraitUpsideDown);
         }
 #pragma clang diagnostic pop
+        //2.3.0
+//        UIBarButtonItem *sysDoneButton = [self createButtonWithType:UIBarButtonSystemItemDone target:self
+//                                                             action:@selector(actionPickerDone:)];
+//
+//        UIBarButtonItem *sysCancelButton = [self createButtonWithType:UIBarButtonSystemItemCancel target:self
+//                                                               action:@selector(actionPickerCancel:)];
+        //2.3.1
+        UIBarButtonItem *sysDoneButton = [self createButtonWithTitle:@"完成" target:self action:@selector(actionPickerDone:)];
 
-        UIBarButtonItem *sysDoneButton = [self createButtonWithType:UIBarButtonSystemItemDone target:self
-                                                             action:@selector(actionPickerDone:)];
-
-        UIBarButtonItem *sysCancelButton = [self createButtonWithType:UIBarButtonSystemItemCancel target:self
-                                                               action:@selector(actionPickerCancel:)];
+        UIBarButtonItem *sysCancelButton = [self createButtonWithTitle:@"取消" target:self action:@selector(actionPickerCancel:)];
 
         [self setCancelBarButtonItem:sysCancelButton];
         [self setDoneBarButtonItem:sysDoneButton];
@@ -571,6 +577,15 @@ CG_INLINE BOOL isIPhone4() {
 
     UIBarButtonItem *barButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:type target:target
                                                                                action:buttonAction];
+    return barButton;
+}
+
+- (UIBarButtonItem *)createButtonWithTitle:(NSString*)tile target:(id)target action:(SEL)buttonAction {
+    
+    UIBarButtonItem *barButton = [[UIBarButtonItem alloc] initWithTitle:tile
+                                                                  style:UIBarButtonItemStylePlain
+                                                                 target:target
+                                                                 action:buttonAction];
     return barButton;
 }
 
